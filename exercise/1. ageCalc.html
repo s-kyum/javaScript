@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나이 계산 프로그램</title>
+</head>
+<body>
+    <h2>나이 계산 프로그램</h2>
+    <script>
+        const currentYear = 2021; //const라고 써놓으면 변경 불가 
+        var birthYear = prompt("출생연도를 입력하세요.(YYYY)");
+        var age;
+        //currentYear = 2020;
+        
+        if(age !== null && (birthYear >= 1910) && (birthYear <= 2020)){age= currentYear - birthYear + 1; 
+           document.write("나이는" + age + "세 입니다.");}
+        else{document.write("출생연도 4자리를 정확히 입력해주세요.");}
+    
+    </script>    
+</body>
+</html>

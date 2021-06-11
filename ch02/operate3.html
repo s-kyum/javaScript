@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연산자 활용하기</title>
+</head>
+<body>
+    <h2>비교(관계) 연산자</h2>
+    <script>
+        var n1 =10;
+        var n2 =5;
+        var result;
+
+        result = n1 > n2;
+        console.log("n1>n2 : " + result);
+
+        result = n1 <= n2;
+        console.log("n1<=n2 : " + result);
+        
+        result = (n1 === n2)  // == : 같다   5==5 : true / 5=='5' : false인데 true로 나옴 => 5==='5' : false  ===가 더 정확함.
+        console.log("n1=n2 : " + result);
+        
+        result = (n1 !== n2)   // != : 같지 않음
+        console.log("n1 !== n2 : " + result);
+    </script>
+</body>
+</html>
