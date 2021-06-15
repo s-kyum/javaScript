@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(무작위수)난수 생성하기</title>
+</head>
+<body>
+    <script>
+        //주사위를 2개 10번 던져서 그 합이 7이면 "Seven Thrown!" 출력
+        //11이면 "Eleven Thrown!"이고, 주사위 눈이 같으면 "Doble Thrown!" 출력
+        for(var i=1; i<=10; i++){
+            var dice1,dice2,total;
+            //1.주사위 2개를 던져 합개 출력
+            dice1=Math.floor(Math.random()*6+1);
+            dice2=Math.floor(Math.random()*6+1);
+            total=dice1+dice2;
+            document.write("dice1 = " + dice1 + '<br>');
+            document.write("dice2 = " + dice2 + '<br>');
+            document.write("total = " + total + '<br>');   
+        if(total===7){document.write("Seven Thrown!"+'<br>');}
+        else if(total===11){document.write("Eleven Thrown!"+'<br>');}
+        else if(dice1===dice2){document.write("Double Thrown!"+'<br>');}
+    }
+    </script>
+</body>
+</html>
