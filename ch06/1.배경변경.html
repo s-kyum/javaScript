@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경색 바꾸기</title>
+    <style>
+        body{text-align:center;}
+        .box{margin:0 auto;}
+        ul{list-style : none; padding-top : 30px;}
+        ul li{display : inline; border : 1px solid #ccc; padding:10px 20px; margin-right: 10px;}
+        ul li a{text-decoration: none; color:black;}
+        ul li a:hover{font-weight: bold;}
+        .box{width:400px; height:300px; border:1px solid #ccc;}
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#" onclick="changeBg('green')">Green</a></li>
+        <li><a href="#" onclick="changeBg('black')">black</a></li>
+        <li><a href="#" onclick="changeBg('pink')">pink</a></li>
+    </ul>
+    <div id = "demo" class ="box"></div>
+    <script>
+        function changeBg(color){
+            let result = document.querySelector("#demo"); //quertSelcetor를 쓸때는(#id)쓰고 getElementById는 (id)쓰는 차이
+            result.style.backgroundColor=color;
+        }
+    </script>
+</body>
+</html>
